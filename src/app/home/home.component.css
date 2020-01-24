@@ -2,13 +2,14 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline;
+    vertical-align: baseline;
+    color: white;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -443,6 +444,7 @@
 /* Contact */
 
 	#contact {
+    opacity: 1;
 		display: -ms-flexbox;
 		-ms-flex-pack: justify;
 		display: -moz-flex;
@@ -457,7 +459,9 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #ececec;
+    /* background: #ececec; */
+    z-index: 99999999;
+    color: white !important;
 	}
 
 		#contact form {
@@ -476,8 +480,25 @@
 		}
 
 			#contact .column.social {
-				background: #e6e6e6;
-			}
+
+				background-color: #000 !important;
+      }
+      .pannel{
+        margin-top: 60px;
+        opacity: .5;
+        background-color: #000 !important;
+      }
+
+      #name{
+        color: black !important;
+      }
+      #message{
+        color: black !important;
+      }
+      
+      #email{
+        color: black !important;
+      }
 
 			@media screen and (max-width: 980px) {
 
@@ -1461,15 +1482,116 @@
 		min-height: 75vh;
 		height: 75vh;
 		position: relative;
-		background: #000;
-		background-image: url(../../images/banner.jpg);
+		/* background: #000; */
+		/* background-image: url(../../assets/images/images/video.mp4); */
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center;
 		text-align: center;
 		color: #FFF;
-	}
+  }
+
+
+
+
+
+	#banner2 {
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
+		padding: 8em 0 6em 0;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		min-height: 75vh;
+		height: 75vh;
+		position: relative;
+		/* background: #000; */
+		/* background-image: url(../../assets/images/images/video.mp4); */
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* text-align: center; */
+		color: #FFF;
+  }
+
+
+  
+	#banner3 {
+		display: -ms-flexbox;
+		-ms-flex-pack: center;
+		-ms-flex-align: center;
+		padding: 1em 0 1em 0;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		min-height: 15vh;
+		height: 15vh;
+		position: relative;
+		/* background: #000; */
+		/* background-image: url(../../assets/images/images/video.mp4); */
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		/* text-align: center; */
+    color: #FFF;
+    
+background-color: black;
+
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -moz-transition: opacity 1s ease, transform 1s ease;
+    -webkit-transition: opacity 1s ease, transform 1s ease;
+    -ms-transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 1s ease, transform 1s ease;
+    position: relative;
+    opacity: 0.8;
+    z-index: 3;
+    /* padding: 0 2em; */
+  }
+
+
+
+
+  
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+  }
+
+.btn{
+  opacity: .8;
+  background: #19B5FE !important;
+}
+
 
 		#banner:before {
 			-moz-transition: opacity 3s ease;
@@ -1586,6 +1708,7 @@
 /* Footer */
 
 	#footer {
+    color: white;
 		padding: 4em 0 2em 0;
 		background: #f2f2f2;
 	}
@@ -1593,7 +1716,8 @@
 		#footer .copyright {
 			color: #bfbfbf;
 			font-size: 0.9em;
-			margin: 0 0 2em 0;
+      /* margin: 0 0 -2px 0; */
+      margin-bottom: -30px;
 			padding: 0 1em;
 			text-align: center;
 		}
