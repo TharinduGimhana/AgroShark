@@ -11,12 +11,12 @@ import { AdminComponent } from './admin/admin.component';
 import {HomeComponent} from './home/home.component'
 
 export const router: Routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    // { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'login-email', component: EmailComponent },
     { path: 'admin', component: AdminComponent },
-    { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
     { path: 'members', component: MembersComponent, canActivate: [AuthGuard] }
 
 ]
