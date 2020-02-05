@@ -13,10 +13,7 @@
     <div class="row">
 
       <div [formGroup]="myGroup" #formData='ngForm'>
-        <input type="text" formControlName="fullName" placeholder="Full Name" firstname="fulltName">
-        <input type="text" formControlName="mobileNo" placeholder="Mobile No"  lastname="mobileNo">
-     
-        <button type="submit" (click)="onSubmit()" class="button button2">Update Prfile</button>
+        <a routerLink="/form" id="goback"> <button type="submit" (click)="onSubmit()" class="button button2">Submit Details</button></a>
       </div>
 
     </div>

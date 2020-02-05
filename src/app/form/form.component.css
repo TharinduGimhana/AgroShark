@@ -1,7 +1,7 @@
 #toolbar {
-    padding:0;
-    width:70%;
-    margin-left:-35%;
+    padding:20px;
+    width:100%;
+    /* margin-left:-35%; */
 }
 
 header {
@@ -37,10 +37,27 @@ h2 {
         width:90%;
         margin-left: -45%;
     }
+    .form-panel{
+        padding: 30px;
+    }
 }
 
-.buuton2{
-    text-align: right;
-    margin: 20px !important;
-    padding: 20px !important;
+.form-panel{
+    padding: 50px 300px 100px 300px;
+}
+
+.btn-primary{
+    width: 10%;
+}
+
+.lable{
+    font-size: 16px;
+}
+.header{
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.back{
+    padding-bottom: 20px;
 }

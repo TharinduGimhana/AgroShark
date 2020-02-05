@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { MembersComponent } from './members/members.component';
 import{AdminComponent} from './admin/admin.component';
 import {HomeComponent} from './home/home.component'
+import {FormComponent} from './form/form.component'
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 import { environment } from '../environments/environment';
@@ -53,7 +54,8 @@ export const firebaseConfig = {
     SignupComponent,
     MembersComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

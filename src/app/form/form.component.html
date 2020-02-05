@@ -1,0 +1,60 @@
+<div class="container">
+
+
+    <!-- 
+
+
+
+
+    <div class="row">
+
+        <div [formGroup]="myGroup" #formData='ngForm'>
+            <input type="text" formControlName="fullName" placeholder="Full Name" firstname="fulltName">
+            <input type="text" formControlName="mobileNo" placeholder="Mobile No" lastname="mobileNo">
+
+            <button type="submit" (click)="onSubmit()" class="button button2">Update Prfile</button>
+        </div>
+
+    </div> -->
+
+
+
+
+
+</div>
+
+<form class="form-panel">
+    <h2 class="header">Field Data</h2>
+    <div class="row back">
+        <a routerLink="/members" id="goback">Go back</a>
+    </div>
+
+    <label class="lable">Area Of The Field</label>
+    <input class="form-control" type="text" placeholder="Default input">
+
+    <label class="lable">Zone</label>
+    <select class="form-control form-group">
+
+        <option>Dry</option>
+        <option>Wet</option>
+
+    </select>
+
+    <label class="lable" for="exampleInputPassword1">Type Of Paddy</label>
+    <select class="form-control form-group">
+
+        <option>D-WSR</option>
+        <option>TPR</option>
+
+    </select>
+
+    <label class="lable" for="exampleInputPassword1">Preffered Fertilize</label>
+    <select class="form-control form-group">
+
+        <option>Liquid Area</option>
+        <option>Ammonium Sulphate</option>
+
+    </select>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
