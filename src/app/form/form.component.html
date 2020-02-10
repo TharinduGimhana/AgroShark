@@ -24,10 +24,21 @@
 </div>
 
 <form class="form-panel" [formGroup]="myGroup">
-    <h2 class="header">Field Data</h2>
+    <h2 class="header">Mission Data</h2>
     <div class="row back">
         <a routerLink="/members" id="goback">Go back</a>
     </div>
+    
+
+
+<label class="lable">Age</label>
+<select class="form-control form-group"  formControlName="age">
+
+    <option>14 days</option>
+    <option>21 days</option>
+    <option>28 days</option>
+
+</select>
 
     <label class="lable">Area Of The Field</label>
     <input class="form-control" type="text" placeholder="Default input"  formControlName="area">
@@ -48,10 +59,10 @@
 
     </select>
 
-    <label class="lable" for="exampleInputPassword1">Preffered Fertilize</label>
+    <label class="lable" for="exampleInputPassword1">Preffered Fertilizer</label>
     <select class="form-control form-group"  formControlName="fertilize">
 
-        <option>Liquid Area</option>
+        <option>Liquid Urea</option>
         <option>Ammonium Sulphate</option>
 
     </select>

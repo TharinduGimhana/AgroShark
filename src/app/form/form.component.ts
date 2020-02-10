@@ -45,6 +45,7 @@ export class FormComponent implements OnInit {
     paddy:new FormControl(),
     fertilize:new FormControl(),
     zone:new FormControl(),
+    age:new FormControl(),
     // date:this.activationDate.toDate(),
  });
 
