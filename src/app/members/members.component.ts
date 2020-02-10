@@ -37,32 +37,28 @@ export class MembersComponent implements OnInit {
 
   }
 
-  form = new FormGroup({
-    firstName : new FormControl ('')
-  })
+//   form = new FormGroup({
+//     firstName : new FormControl ('')
+//   })
 
-  myGroup = new FormGroup({
-    fullName: new FormControl(),
-    mobileNo:new FormControl()
- });
+//   myGroup = new FormGroup({
+//     fullName: new FormControl(),
+//     mobileNo:new FormControl()
+//  });
 
-  onSubmit() {
-    // const { currentUser } = firebase.auth();
-    // console.log(currentUser);
-    // firebase.database().ref(`users/${currentUser.uid}`)
-    // .push('firstName');
-    console.log(this.name)
-    this.members.push({
-      UserId:this.name.uid,
-      // name :this.myGroup
-      // ImgUrl:this.name.email,
-      email:this.email.auth.email, 
-      name:this.name.auth.displayName,
-      // firstName: this.
-      ProfileDetails:this.myGroup.value
+  // onSubmit() {
+ 
+  //   console.log(this.name)
+  //   this.members.push({
+  //     UserId:this.name.uid,
+    
+  //     email:this.email.auth.email, 
+  //     name:this.name.auth.displayName,
+
+  //     ProfileDetails:this.myGroup.value
    
-      })
-  }
+  //     })
+  // }
 
   logout() {
     this.af.auth.logout();

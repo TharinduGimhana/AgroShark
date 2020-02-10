@@ -23,17 +23,17 @@
 
 </div>
 
-<form class="form-panel">
+<form class="form-panel" [formGroup]="myGroup">
     <h2 class="header">Field Data</h2>
     <div class="row back">
         <a routerLink="/members" id="goback">Go back</a>
     </div>
 
     <label class="lable">Area Of The Field</label>
-    <input class="form-control" type="text" placeholder="Default input">
+    <input class="form-control" type="text" placeholder="Default input"  formControlName="area">
 
     <label class="lable">Zone</label>
-    <select class="form-control form-group">
+    <select class="form-control form-group"  formControlName="zone">
 
         <option>Dry</option>
         <option>Wet</option>
@@ -41,7 +41,7 @@
     </select>
 
     <label class="lable" for="exampleInputPassword1">Type Of Paddy</label>
-    <select class="form-control form-group">
+    <select class="form-control form-group"  formControlName="paddy">
 
         <option>D-WSR</option>
         <option>TPR</option>
@@ -49,12 +49,12 @@
     </select>
 
     <label class="lable" for="exampleInputPassword1">Preffered Fertilize</label>
-    <select class="form-control form-group">
+    <select class="form-control form-group"  formControlName="fertilize">
 
         <option>Liquid Area</option>
         <option>Ammonium Sulphate</option>
 
     </select>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
 </form>

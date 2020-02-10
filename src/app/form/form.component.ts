@@ -16,15 +16,16 @@ import { ReactiveFormsModule } from "@angular/forms";
   host: { '[@moveIn]': '' }
 })
 export class FormComponent implements OnInit {
+  [x: string]: any;
 
   name: any;
   email :any;
   state: string = '';
 
-  public members: FirebaseListObservable<any[]>;
+  public missions: FirebaseListObservable<any[]>;
  
   constructor(public af: AngularFire, private router: Router, formBuilder: FormBuilder , db: AngularFireDatabase) {
-    this.members = db.list('/members');
+    this.missions = db.list('/missions');
     this.af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
@@ -37,13 +38,14 @@ export class FormComponent implements OnInit {
 
   }
 
-  form = new FormGroup({
-    firstName : new FormControl ('')
-  })
+
 
   myGroup = new FormGroup({
-    fullName: new FormControl(),
-    mobileNo:new FormControl()
+    area: new FormControl(),
+    paddy:new FormControl(),
+    fertilize:new FormControl(),
+    zone:new FormControl(),
+    // date:this.activationDate.toDate(),
  });
 
   onSubmit() {
@@ -52,14 +54,16 @@ export class FormComponent implements OnInit {
     // firebase.database().ref(`users/${currentUser.uid}`)
     // .push('firstName');
     console.log(this.name)
-    this.members.push({
+    this.missions.push({
       UserId:this.name.uid,
       // name :this.myGroup
       // ImgUrl:this.name.email,
       email:this.email.auth.email, 
       name:this.name.auth.displayName,
+      // date:this.activationDate.toDate(),
       // firstName: this.
-      ProfileDetails:this.myGroup.value
+      FieldData:this.myGroup.value,
+    
    
       })
   }
