@@ -9,7 +9,7 @@
 		font-size: 100%;
 		font: inherit;
     vertical-align: baseline;
-    color: white;
+    /* color: white; */
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -461,7 +461,7 @@
 		justify-content: space-between;
     /* background: #ececec; */
     z-index: 99999999;
-    color: white !important;
+    color: black !important;
 	}
 
 		#contact form {
@@ -484,9 +484,9 @@
 				background-color: #000 !important;
       }
       .pannel{
-        margin-top: 60px;
-        opacity: .5;
-        background-color: #000 !important;
+        /* margin-top: 40px; */
+        /* opacity: .5;
+        background-color: #000 !important; */
       }
 
       #name{
@@ -1483,7 +1483,7 @@
 		height: 75vh;
 		position: relative;
 		/* background: #000; */
-		/* background-image: url(../../assets/images/images/video.mp4); */
+		/* background-image: url(../../assets/images/images/banner.jpg); */
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
@@ -1516,14 +1516,15 @@
 		min-height: 75vh;
 		height: 75vh;
 		position: relative;
-		/* background: #000; */
+		background: #fff;
 		/* background-image: url(../../assets/images/images/video.mp4); */
 		background-size: cover;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center;
 		/* text-align: center; */
-		color: #FFF;
+		/* color: #FFF; */
+		color: #000;
   }
 
 
@@ -1568,9 +1569,10 @@ background-color: black;
     -ms-transition: opacity 1s ease, transform 1s ease;
     transition: opacity 1s ease, transform 1s ease;
     position: relative;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 3;
-    /* padding: 0 2em; */
+	/* padding: 0 2em; */
+	margin-top: -60px;
   }
 
 
@@ -1607,7 +1609,7 @@ background-color: black;
 			background-color: #000;
 			height: 100%;
 			left: 0;
-			opacity: 0.65;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
