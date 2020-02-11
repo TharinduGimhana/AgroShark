@@ -10,6 +10,8 @@ import { EmailComponent } from './email/email.component';
 import { AdminComponent } from './admin/admin.component';
 import {HomeComponent} from './home/home.component';
 import {FormComponent} from './form/form.component'
+import { AlertComponent } from './alert/alert.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const router: Routes = [
     // { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -18,6 +20,8 @@ export const router: Routes = [
     { path: 'login-email', component: EmailComponent },
     { path: 'admin', component: AdminComponent },
     { path: 'form', component: FormComponent },
+    { path: 'alert', component: AlertComponent },
+    { path: 'profile', component: ProfileComponent },
     { path: '', component: HomeComponent },
     { path: 'members', component: MembersComponent, canActivate: [AuthGuard] }
 

@@ -25,23 +25,23 @@
 
 <form class="form-panel" [formGroup]="myGroup">
     <h2 class="header">Mission Data</h2>
-    <div class="row back">
+    <div class="row back" style="font-size: 16px;">
         <a routerLink="/members" id="goback">Go back</a>
     </div>
     
 
 
 <label class="lable">Age</label>
-<select class="form-control form-group"  formControlName="age">
+<select class="form-control form-group"  formControlName="age" required>
 
     <option>14 days</option>
     <option>21 days</option>
     <option>28 days</option>
 
 </select>
-
+<!-- 
     <label class="lable">Area Of The Field</label>
-    <input class="form-control" type="text" placeholder="Default input"  formControlName="area">
+    <input class="form-control" type="text" placeholder="Default input"  formControlName="area"> -->
 
     <label class="lable">Zone</label>
     <select class="form-control form-group"  formControlName="zone">
@@ -60,12 +60,22 @@
     </select>
 
     <label class="lable" for="exampleInputPassword1">Preffered Fertilizer</label>
-    <select class="form-control form-group"  formControlName="fertilize">
+    <select class="form-control form-group"  formControlName="fertilizer">
 
         <option>Liquid Urea</option>
         <option>Ammonium Sulphate</option>
 
     </select>
+   
 
-    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  
+    <a routerLink="/alert" id="goback"><button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button></a>
+    <!-- <div class="row"  *ngIf="showMsg">
+        <div class="col-xs-12">
+          <p class="alert alert-success">
+              <strong>Successfully added data</strong> 
+
+          </p>
+        </div>
+      </div> -->
 </form>

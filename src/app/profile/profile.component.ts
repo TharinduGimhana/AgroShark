@@ -1,20 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable, AngularFireDatabase } from 'angularfire2';
 import { Router } from '@angular/router';
-
+import { moveIn, fallIn, moveInLeft } from '../router.animations';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from "@angular/forms";
 
 
 
-
 @Component({
-  selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css'],
-
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-export class MembersComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   name: any;
   email :any;
@@ -59,10 +57,10 @@ export class MembersComponent implements OnInit {
   //     })
   // }
 
-  logout() {
-    this.af.auth.logout();
-    this.router.navigateByUrl('/login');
-  }
+  // logout() {
+  //   this.af.auth.logout();
+  //   this.router.navigateByUrl('/login');
+  // }
 
 
   ngOnInit() {

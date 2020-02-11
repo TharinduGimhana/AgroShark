@@ -1,63 +1,102 @@
-<div class="form-container" id="toolbar">
+<div class="form-container1" id="toolbar">
 
-  <header [@fallIn]="state">
-    <button (click)="logout()" class="basic-btn">Logout</button>
+  <header>
+    <!-- <button (click)="logout()" style="margin: 20px;" class="basic-btn">Logout</button> -->
   </header>
+  <form class="btn-panel" style="text-align: right;">
 
-  <div id="page" [@moveInLeft]="state">
+
+
+    <a routerLink="/form" id="goback"> <button (click)="logout()" style="width: 10%;border-radius: 5px;margin: 20px;"
+        class="basic-btn">Logout</button></a>
+
+  </form>
+
+  <div style="text-align: center;">
+    <h4>The suggested fertilizer amounts per hactare depend on the zone (Dry or Wet), type of paddy, Age of the crop and
+      the type of the fertilizer.
+      <br></h4>
+    <h4 style="color: rgb(56, 164, 236);"> Instructions: Refer the following details & sumbit correct details.</h4>
+  </div>
+
+  <div id="page">
     <!-- <h2>Welcome {{ name.auth.displayName }}!</h2>
     -->
-    <h2>Welcome {{ email.auth.email }}!</h2>
+    <h2 style="text-align: center;">Welcome {{ name.auth.displayName }}!</h2>
 
 
     <div class="row">
 
-      <div>
-        <a routerLink="/form" id="goback"> <button type="submit" (click)="onSubmit()" class="button button2">Submit Details</button></a>
-      </div>
 
     </div>
-    <table class="pure-table">
-      <thead>
-        <tr>
-          <th>Cost</th>
-          <th>Covered Area</th>
-          <th>Date</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
+    <form class="form-panel" style="text-align: center;">
 
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Honda</td>
-          <td>Accord</td>
-          <td>2009</td>
-        </tr>
 
-        <tr>
-          <td>2</td>
-          <td>Toyota</td>
-          <td>Camry</td>
-          <td>2012</td>
-        </tr>
 
-        <tr>
-          <td>3</td>
-          <td>Hyundai</td>
-          <td>Elantra</td>
-          <td>2010</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- <img src="assets/images/filler.png" /> -->
-    <div class="row">
-      <div class="col-lg-4">
-        <button class="button button2">Add Yield</button>
+      <a routerLink="/form" id="goback"> <button type="submit" style="font-size: 16px;border-radius: 5px;width: 40%;"
+          (click)="onSubmit()" class="button button2">Submit Details</button></a>
+
+
+    </form>
+    <div class="container">
+    <div class="row1 ">
+      <div class="col-lg-6" style="text-align: right;">
+        <div><img width="300px" src="../../assets/images/images/map.jpeg"></div>
       </div>
+      <div class="col-lg-6">
+        <p style="width: 50%;margin-top: 50px;font-size: 16px;">
+          Map of Sri Lanka. Climatic zones (dry and wet zones) of Sri Lanka, arbitrarily demarcated based on the annual
+          rainfall.
+        </p>
+      </div>
+      
     </div>
   </div>
 
+  <div class="container">
+    <div class="row1 ">
+      <div class="col-lg-6" style="text-align: right;">
+        <div><img width="300px" src="../../assets/images/images/tpr.jpeg"></div>
+      </div>
+      <div class="col-lg-6">
+        <p style="width: 50%;margin-top: 50px;font-size: 16px;">
+          TPR: Rice seedlings grown in a nursery are pulled and transplanted into puddled and leveled fields 15 to 40 days after seeding (DAS). Rice seedlings can either be transplanted manually or by machine.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row1 ">
+      <div class="col-lg-6" style="text-align: right;">
+        <div><img width="300px" src="../../assets/images/images/wsr.jpeg"></div>
+      </div>
+      <div class="col-lg-6">
+        <p style="width: 50%;margin-top: 50px;font-size: 16px;">
+          D-WSR: seed is normally pre-germinated prior to broadcasting onto recently drained, well-puddled seedbeds or into pre-standing water in the fields.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row1 ">
+      <div class="col-lg-12" style="text-align: center;">
+        <div><img style="width: 60%;" src="../../assets/images/images/pip.jpeg"></div>
+      </div>
+     
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+  </div>
 
 
 </div>

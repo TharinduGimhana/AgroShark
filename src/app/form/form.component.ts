@@ -21,11 +21,15 @@ export class FormComponent implements OnInit {
   name: any;
   email :any;
   state: string = '';
+  showMsg: boolean = false;
+  form:any;
 
   public missions: FirebaseListObservable<any[]>;
+
  
   constructor(public af: AngularFire, private router: Router, formBuilder: FormBuilder , db: AngularFireDatabase) {
     this.missions = db.list('/missions');
+  
     this.af.auth.subscribe(auth => {
       if (auth) {
         this.name = auth;
@@ -43,7 +47,7 @@ export class FormComponent implements OnInit {
   myGroup = new FormGroup({
     area: new FormControl(),
     paddy:new FormControl(),
-    fertilize:new FormControl(),
+    fertilizer:new FormControl(),
     zone:new FormControl(),
     age:new FormControl(),
     // date:this.activationDate.toDate(),
@@ -55,6 +59,8 @@ export class FormComponent implements OnInit {
     // firebase.database().ref(`users/${currentUser.uid}`)
     // .push('firstName');
     console.log(this.name)
+
+      this.showMsg= true;
     this.missions.push({
       UserId:this.name.uid,
       // name :this.myGroup
@@ -67,6 +73,20 @@ export class FormComponent implements OnInit {
     
    
       })
+//       var playersRef = firebase.database().ref("players/");
+
+// playersRef.set ({
+//    John: {
+//       number: 1,
+//       age: 30
+//    },
+	
+//    Amanda: {
+//       number: 2,
+//       age: 20
+//    }
+// });
+      
   }
 
   logout() {

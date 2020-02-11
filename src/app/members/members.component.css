@@ -42,5 +42,40 @@ h2 {
 .buuton2{
     text-align: right;
     margin: 20px !important;
-    padding: 20px !important;
+    padding: 50px !important;
+    font-size: 20px !important;
 }
+
+.form-panel{
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 50px 400px 50px 400px;
+}
+
+.form-panel a{
+    font-size: 20px !important;
+    border-radius: 5px;
+ 
+}
+.form-container{
+    height: 6000px !important;
+}
+
+/* .row{
+    margin-left: 0px !important;
+    margin-right:0px !important ;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+

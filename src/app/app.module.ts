@@ -15,6 +15,8 @@ import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 import { environment } from '../environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AlertComponent } from './alert/alert.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -55,7 +57,9 @@ export const firebaseConfig = {
     MembersComponent,
     AdminComponent,
     HomeComponent,
-    FormComponent
+    FormComponent,
+    AlertComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
